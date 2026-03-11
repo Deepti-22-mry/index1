@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.3) -->
+<!-- InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.3) -->
 <script type="text/javascript" async=true>
 (function() {
 var host = window.location.hostname;
 var element = document.createElement('script');
 var firstScript = document.getElementsByTagName('script')[0];
-var url = 'https://test.cmp.inmobi.com'
+var url = 'https://cmp.inmobi.com'
 .concat('/choice/', 'UDyLrkB_TyTgt', '/', host, '/choice.js?tag_version=V3');
 var uspTries = 0;
 var uspTriesLimit = 3;
@@ -325,67 +326,233 @@ var uspInterval = setInterval(checkIfUspIsReady, 6000);
 })();
 </script>
 <!-- End InMobi Choice. Consent Manager Tag v3.0 (for TCF 2.2) -->
-
-    
-<!-- <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="7e0acb7d-4389-4be2-86e1-67e8b098465c" data-blockingmode="auto" type="text/javascript"></script>
--->
-    
     <meta charset="UTF-8">
-    <title>Personal Website</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Cycle Shop</title>
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-            color: #333;
-        }
-
-        header {
-         background-color: #2c3e50;
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-
-        main {
-            padding: 40px;
-            max-width: 800px;
-            margin: auto;
-            background: white;
-            margin-top: 30px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 40px;
-            font-size: 14px;
-            color: #777;
-        }
+    
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+    }
+    
+    body{
+    background:#f4f6f8;
+    }
+    
+    /* Construction Alert */
+    
+    .construction-alert{
+    background:#ffeb3b;
+    color:#333;
+    text-align:center;
+    padding:12px;
+    font-weight:bold;
+    font-size:14px;
+    }
+    
+    /* Header */
+    
+    header{
+    background:#1f2937;
+    color:white;
+    padding:20px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    }
+    
+    .logo{
+    font-size:22px;
+    font-weight:bold;
+    }
+    
+    nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:16px;
+    }
+    
+    /* Hero Section */
+    
+    .hero{
+    background:#2563eb;
+    color:white;
+    padding:60px;
+    text-align:center;
+    }
+    
+    .hero h1{
+    font-size:40px;
+    margin-bottom:10px;
+    }
+    
+    /* Product Section */
+    
+    .products{
+    padding:40px;
+    max-width:1200px;
+    margin:auto;
+    }
+    
+    .product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+    }
+    
+    .product-card{
+    background:white;
+    border-radius:8px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+    padding:20px;
+    text-align:center;
+    }
+    
+    .product-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:6px;
+    }
+    
+    .product-card h3{
+    margin:15px 0 5px;
+    }
+    
+    .price{
+    color:#2563eb;
+    font-weight:bold;
+    margin-bottom:10px;
+    }
+    
+    button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:6px;
+    cursor:pointer;
+    }
+    
+    button:hover{
+    background:#1d4ed8;
+    }
+    
+    /* Footer */
+    
+    footer{
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+    color:#777;
+    }
+    
     </style>
-</head>
-<body>
-
-<header>
-    <h1>Welcome</h1>
-</header>
-
-<main>
-    <h2>About This Site</h2>
-    <p>This is a simple personal website hosted using GitHub Pages.</p>
-
-    <h2>Projects</h2>
-    <p>More content will be added soon.</p>
-</main>
-
-<footer>
-    © 2026
-</footer>
-
-</body>
-</html>
+    
+    </head>
+    
+    <body>
+    
+    <!-- Construction Alert -->
+    <div class="construction-alert">
+    ⚠️ This website is currently under construction. Some features may not work properly.
+    </div>
+    
+    <header>
+    
+    <div class="logo">CycleStore</div>
+    
+    <nav>
+    <a href="#">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">Cart</a>
+    <a href="#">Contact</a>
+    </nav>
+    
+    </header>
+    
+    
+    <section class="hero">
+    
+    <h1>Find Your Perfect Cycle</h1>
+    <p>Explore our collection of premium bicycles</p>
+    
+    </section>
+    
+    
+    <section class="products">
+    
+    <h2 style="margin-bottom:20px;">Popular Cycles</h2>
+    
+    <div class="product-grid">
+    
+    <div class="product-card">
+    
+    <img src="https://images.unsplash.com/photo-1518655048521-f130df041f66">
+    
+    <h3>Mountain Bike</h3>
+    
+    <p class="price">₹18,999</p>
+    
+    <button>Add to Cart</button>
+    
+    </div>
+    
+    
+    <div class="product-card">
+    
+    <img src="https://images.unsplash.com/photo-1511994298241-608e28f14fde">
+    
+    <h3>Road Bike</h3>
+    
+    <p class="price">₹24,999</p>
+    
+    <button>Add to Cart</button>
+    
+    </div>
+    
+    
+    <div class="product-card">
+    
+    <img src="https://images.unsplash.com/photo-1507034589631-9433cc6bc453">
+    
+    <h3>City Cycle</h3>
+    
+    <p class="price">₹12,999</p>
+    
+    <button>Add to Cart</button>
+    
+    </div>
+    
+    
+    <div class="product-card">
+    
+    <img src="https://images.unsplash.com/photo-1508975559806-0c2b1b9c3e4d">
+    
+    <h3>Hybrid Bike</h3>
+    
+    <p class="price">₹21,999</p>
+    
+    <button>Add to Cart</button>
+    
+    </div>
+    
+    </div>
+    
+    </section>
+    
+    
+    <footer>
+    
+    <p>© 2026 CycleStore</p>
+    
+    </footer>
+    
+    
+    </body>
+    </html>
